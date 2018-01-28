@@ -1,4 +1,5 @@
 function copyToClipboard(element) {
+  element = document.getElementById(element).innerHTML;
   var $temp = $("<input>");
   $("body").append($temp);
   $temp.val($(element).text()).select();
